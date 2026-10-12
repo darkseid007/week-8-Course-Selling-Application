@@ -28,5 +28,5 @@ userRouter.get("/user/purchases",function(req,res){
 })
 
 module.exports = {
-    courseRouter: courseRouter;
+    userRouter: userRouter
 }

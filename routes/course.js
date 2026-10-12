@@ -1,12 +1,21 @@
-app.get("/course/purchase",function(req,res){
+const {Routes} = require("express");
+
+const courseRouter = Router();
+
+
+courseRouter.get("/purchase",function(req,res){
     //you would expect the user to pay you money
     res.json({
         message : "Signup endpoint"
     })
 })
 
-app.get("/course",function(req,res){
+courseRouter.get("/bulk",function(req,res){
     res.json({
         message : "Signup endpoint"
     })
 })
+
+module.exports = {
+    courseRouter: courseRouter
+}

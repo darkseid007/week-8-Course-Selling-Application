@@ -1,12 +1,17 @@
 const express = require("express");
-// const jwt = require("jsonwebtoken");
+const { userRouter } = require("./routes/user");
+const { courseRouter } = require("./routes/course");
 
+// const jwt = require("jsonwebtoken");
 // const JWT_SECRET = "S#C$ET";
 // const bcrypt = require("brcrypt");
 // const {z} = require("zod");
 // const mongoose = require("mongoDB");
 
 const app = express();
+
+app.use("/api/v1/user",userRouter);
+app.use("/api/v1/course",courseRouter);
 
 
 
