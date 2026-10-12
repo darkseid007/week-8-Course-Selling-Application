@@ -42,7 +42,7 @@ app.get("/course/purchase",function(req,res){
     })
 })
 
-app.get("/courses",function(req,res){
+app.get("/course",function(req,res){
     res.json({
         message : "Signup endpoint"
     })
