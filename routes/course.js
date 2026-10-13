@@ -1,4 +1,4 @@
-const {Routes} = require("express");
+const {Router} = require("express");
 
 const courseRouter = Router();
 
